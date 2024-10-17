@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Звіти з лабораторних робіт</title>
 </head>
-
 <body>
     <header>
         <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
@@ -17,155 +16,16 @@
     </header>
 
     <div class="labs-menu">
-        <button onclick="selectLab(1)">Самостійна робота №1</button>
-        <button onclick="selectLab(2)">Лабораторна робота №1</button>
-        <button onclick="selectLab(3)">Лабораторна робота №2</button>
-        <button onclick="selectLab(4)">Лабораторна робота №3</button>
-        <button onclick="selectLab(5)">Лабораторна робота №4</button>
-        <button onclick="selectLab(6)">Лабораторна робота №5</button>
-        <button onclick="selectLab(7)">Лабораторна робота №6</button>
-        <button onclick="selectLab(8)">Лабораторна робота №7</button>
-        <button onclick="selectLab(9)">Лабораторна робота №8</button>
-        <button onclick="selectLab(10)">Лабораторна робота №9</button>
+        <button onclick="window.location.href='sr1.html'">Самостійна робота №1</button>
+        <button onclick="window.location.href='laba1.html'">Лабораторна робота №1</button>
+        <button onclick="window.location.href='laba2.html'">Лабораторна робота №2</button>
+        <button onclick="window.location.href='laba3.html'">Лабораторна робота №3</button>
+        <button onclick="window.location.href='laba4.html'">Лабораторна робота №4</button>
+        <button onclick="window.location.href='laba5.html'">Лабораторна робота №5</button>
+        <button onclick="window.location.href='laba6.html'">Лабораторна робота №6</button>
+        <button onclick="window.location.href='laba7.html'">Лабораторна робота №7</button>
+        <button onclick="window.location.href='laba8.html'">Лабораторна робота №8</button>
+        <button onclick="window.location.href='laba9.html'">Лабораторна робота №9</button>
     </div>
-
-    <div class="container">
-        <div id="lab-details" class="labs-details">
-            <h2 id="lab-title">Виберіть лабораторну роботу</h2>
-                <button onclick="showSection('description')">Опис предметного середовища</button>
-                <button onclick="showSection('theme')">Тема, Мета, Місце розташування</button>
-                <button onclick="showSection('structure')">Структура документа</button>
-                <button onclick="showSection('htmlTable')">HTML-код Таблиці</button>
-                <button onclick="showSection('htmlForm')">HTML-код Форми</button>
-                <button onclick="showSection('htmlImages')">HTML-код Зображення</button>
-                <button onclick="showSection('conclusion')">Висновки</button>
-            </div>
-            <div id="content" class="content">
-                <p>Оберіть лабораторну роботу та секцію, щоб побачити деталі.</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const labDetails = {
-            1: {
-                title: 'Самостійна робота №1',
-                description: '<p>Створити невелику WEB-сторінку про корисні звички.</p>',
-                theme: '<img src="./images/meta_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <a href="https://github.com/Anton1o-git/IC-33_LA_sr_1">Посилання на WEB-застосунок</a> <br> <br> <a href="https://anton1o-git.github.io/IC-33_LA_sr_1/">Жива сторінка WEB-застосунку</a>',
-                structure: '<img src="./images/structure_1_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_2_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_3_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_4_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_5_sr_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlTable: '<h2>html код:</h2> <img src="./images/table_code_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>Результат:</h2> <img src="./images/table_photo_sr_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlForm: '<h2>html код:</h2> <img src="./images/form_code_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>Результат:</h2> <img src="./images/form_photo_sr_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlImages: '<h2>html код:</h2> <img src="./images/img_code_sr_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>Результат:</h2> <img src="./images/img_photo_sr_1.png" alt="#" style="max-width:100%; height:auto;">',
-                conclusion: '<img src="./images/conclusion_sr_1.png" alt="#" style="max-width:100%; height:auto;">',
-            },
-            2: {
-                title: 'Лабораторна робота №1',
-                description: '<img src="./images/description_laba_1.png" alt="Опис лабораторної роботи №1" style="max-width:100%; height:auto;">',
-                theme: '<img src="./images/theme_laba_1.png" alt="Тема лабораторної роботи №1" style="max-width:100%; height:auto;"> <br> <a href="https://github.com/Anton1o-git/web_application">Посилання на WEB-застосунок</a> <br> <br> <a href="https://anton1o-git.github.io/web_application/">Жива сторінка WEB-застосунку</a>',
-                structure: '<img src="./images/structure_1_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_2_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_3_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_4_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlTable: '<h2>html код:</h2> <img src="./images/table_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/table_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>Результат:</h2> <img src="./images/table_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlForm: '<h2>html код:</h2> <img src="./images/form_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/form_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"><h2>Результат:</h2> <img src="./images/form_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
-                htmlImages: '<h2>html код:</h2> <img src="./images/img_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/img_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"><h2>Результат:</h2> <img src="./images/img_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
-                conclusion: '<img src="./images/conclusion_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
-            },
-            3: {
-                title: 'Лабораторна робота №2',
-                description: 'Опис для лабораторної роботи №2.',
-                theme: 'Тема лабораторної роботи №2, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №2.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №2.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №2.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №2.',
-                conclusion: 'Висновки для лабораторної роботи №2.',
-            },
-            4: {
-                title: 'Лабораторна робота №3',
-                description: 'Опис для лабораторної роботи №3.',
-                theme: 'Тема лабораторної роботи №3, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №3.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №3.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №3.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №3.',
-                conclusion: 'Висновки для лабораторної роботи №3.',
-            },
-            5: {
-                title: 'Лабораторна робота №4',
-                description: 'Опис для лабораторної роботи №4.',
-                theme: 'Тема лабораторної роботи №4, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №4.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №4.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №4.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №4.',
-                conclusion: 'Висновки для лабораторної роботи №4.',
-            },
-            6: {
-                title: 'Лабораторна робота №5',
-                description: 'Опис для лабораторної роботи №5.',
-                theme: 'Тема лабораторної роботи №5, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №5.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №5.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №5.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №5.',
-                conclusion: 'Висновки для лабораторної роботи №5.',
-            },
-            7: {
-                title: 'Лабораторна робота №6',
-                description: 'Опис для лабораторної роботи №6.',
-                theme: 'Тема лабораторної роботи №6, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №6.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №6.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №6.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №6.',
-                conclusion: 'Висновки для лабораторної роботи №6.',
-            },
-            8: {
-                title: 'Лабораторна робота №7',
-                description: 'Опис для лабораторної роботи №7.',
-                theme: 'Тема лабораторної роботи №7, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №7.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №7.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №7.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №7.',
-                conclusion: 'Висновки для лабораторної роботи №7.',
-            },
-            9: {
-                title: 'Лабораторна робота №8',
-                description: 'Опис для лабораторної роботи №8.',
-                theme: 'Тема лабораторної роботи №8, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №8.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №8.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №8.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №8.',
-                conclusion: 'Висновки для лабораторної роботи №8.',
-            },
-            10: {
-                title: 'Лабораторна робота №9',
-                description: 'Опис для лабораторної роботи №9.',
-                theme: 'Тема лабораторної роботи №9, Мета: вивчити ... , Місце розташування: в класі ...',
-                structure: 'Структура документа для лабораторної роботи №9.',
-                htmlTable: 'HTML-код таблиці для лабораторної роботи №9.',
-                htmlForm: 'HTML-код форми для лабораторної роботи №9.',
-                htmlImages: 'HTML-код зображення для лабораторної роботи №9.',
-                conclusion: 'Висновки для лабораторної роботи №9.',
-            },
-        };
-
-        let currentLab = null;
-
-        function selectLab(labNumber) {
-            currentLab = labNumber;
-            document.getElementById('lab-title').innerText = labDetails[labNumber].title;
-            document.getElementById('content').innerHTML = '<p>Оберіть секцію, щоб побачити деталі.</p>';
-        }
-
-        function showSection(sectionId) {
-            if (currentLab && labDetails[currentLab]) {
-                const details = labDetails[currentLab];
-                document.getElementById('content').innerHTML = details[sectionId];
-            } else {
-                alert('Будь ласка, спочатку оберіть лабораторну роботу.');
-            }
-        }
-    </script>
 </body>
 </html>

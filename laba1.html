@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <header>
+        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+        <div class="student-info">
+            <p>Виконав студент групи IC-33 Лихоліт Антон</p>
+            <img src="./images/student-photo.jpg" alt="Фото студента">
+        </div>
+    </header>
+
+    <div class="labs-menu">
+        <button onclick="window.location.href='sr1.html'">Самостійна робота №1</button>
+        <button onclick="window.location.href='laba1.html'">Лабораторна робота №1</button>
+        <button onclick="window.location.href='laba2.html'">Лабораторна робота №2</button>
+        <button onclick="window.location.href='laba3.html'">Лабораторна робота №3</button>
+        <button onclick="window.location.href='laba4.html'">Лабораторна робота №4</button>
+        <button onclick="window.location.href='laba5.html'">Лабораторна робота №5</button>
+        <button onclick="window.location.href='laba6.html'">Лабораторна робота №6</button>
+        <button onclick="window.location.href='laba7.html'">Лабораторна робота №7</button>
+        <button onclick="window.location.href='laba8.html'">Лабораторна робота №8</button>
+        <button onclick="window.location.href='laba9.html'">Лабораторна робота №9</button>
+    </div>
+
+    <div class="container">
+        <div class="labs-details">
+            <button onclick="showSection('description')">Опис лабораторної роботи</button>
+            <button onclick="showSection('theme')">Тема, Мета, Місце розташування</button>
+            <button onclick="showSection('structure')">Структура документа</button>
+            <button onclick="showSection('htmlTable')">HTML-код Таблиці</button>
+            <button onclick="showSection('htmlForm')">HTML-код Форми</button>
+            <button onclick="showSection('htmlImages')">HTML-код Зображення</button>
+            <button onclick="showSection('conclusion')">Висновки</button>
+        </div>
+        <div id="content" class="content">
+            <p>Оберіть секцію, щоб побачити деталі.</p>
+        </div>
+    </div>
+    <script>
+        const labDetails = {
+                title: 'Лабораторна робота №1',
+                description: '<img src="./images/description_laba_1.png" alt="Опис лабораторної роботи №1" style="max-width:100%; height:auto;">',
+                theme: '<img src="./images/theme_laba_1.png" alt="Тема лабораторної роботи №1" style="max-width:100%; height:auto;"> <br> <a href="https://github.com/Anton1o-git/web_application">Посилання на WEB-застосунок</a> <br> <br> <a href="https://anton1o-git.github.io/web_application/">Жива сторінка WEB-застосунку</a>',
+                structure: '<img src="./images/structure_1_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_2_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_3_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/structure_4_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
+                htmlTable: '<h2>html код:</h2> <img src="./images/table_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/table_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>Результат:</h2> <img src="./images/table_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
+                htmlForm: '<h2>html код:</h2> <img src="./images/form_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/form_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"><h2>Результат:</h2> <img src="./images/form_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
+                htmlImages: '<h2>html код:</h2> <img src="./images/img_code_html_laba_1.png" alt="#" style="max-width:100%; height:auto;"> <h2>css код:</h2> <img src="./images/img_code_css_laba_1.png" alt="#" style="max-width:100%; height:auto;"><h2>Результат:</h2> <img src="./images/img_photo_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
+                conclusion: '<img src="./images/conclusion_laba_1.png" alt="#" style="max-width:100%; height:auto;">',
+        };
+
+        function showSection(sectionId) {
+            document.getElementById('content').innerHTML = labDetails[sectionId];
+        }
+    </script>
+</body>
+</html>

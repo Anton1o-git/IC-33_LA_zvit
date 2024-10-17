@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторна робота №2</title>
+</head>
+<body>
+    <header>
+        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+        <div class="student-info">
+            <p>Виконав студент групи IC-33 Лихоліт Антон</p>
+            <img src="./images/student-photo.jpg" alt="Фото студента">
+        </div>
+    </header>
+
+    <div class="labs-menu">
+        <button onclick="window.location.href='sr1.html'">Самостійна робота №1</button>
+        <button onclick="window.location.href='laba1.html'">Лабораторна робота №1</button>
+        <button onclick="window.location.href='laba2.html'">Лабораторна робота №2</button>
+        <button onclick="window.location.href='laba3.html'">Лабораторна робота №3</button>
+        <button onclick="window.location.href='laba4.html'">Лабораторна робота №4</button>
+        <button onclick="window.location.href='laba5.html'">Лабораторна робота №5</button>
+        <button onclick="window.location.href='laba6.html'">Лабораторна робота №6</button>
+        <button onclick="window.location.href='laba7.html'">Лабораторна робота №7</button>
+        <button onclick="window.location.href='laba8.html'">Лабораторна робота №8</button>
+        <button onclick="window.location.href='laba9.html'">Лабораторна робота №9</button>
+    </div>
+
+    <div class="container">
+        <div class="labs-details">
+            <button onclick="showSection('topic_lr_2')">Тема, мета ЛР №2</button>
+            <button onclick="showSection('methods_of_connecting_styles_lr_2')">Способи підключення стилів</button>
+            <button onclick="showSection('selectors_lr_2')">Селектори</button>
+            <button onclick="showSection('tag_selectors_lr_2')">Селектори тегу</button>
+            <button onclick="showSection('class_selectors_lr_2')">Селектори класу</button>
+            <button onclick="showSection('id_selectors_lr_2')">Селектори ідентифікатора</button>
+            <button onclick="showSection('other_selectors_lr_2')">Інші селектори</button>
+            <button onclick="showSection('css_lr_2')">CSS: Шрифти, Текст, Таблиці, Фон, Контур, Списки, CSS Просунутий</button>
+            <button onclick="showSection('conclusion_lr_2')">Висновки</button>
+        </div>
+        <div id="content" class="content">
+            <p>Оберіть секцію, щоб побачити деталі.</p>
+        </div>
+    </div>
+
+    <script>
+        const labDetails = {
+            title: 'Лабораторна робота №2',
+                topic_lr_2: '<img src="./images/topic_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <a href="https://github.com/Anton1o-git/web_application">Посилання на WEB-застосунок</a> <br> <br> <a href="https://anton1o-git.github.io/web_application/">Жива сторінка WEB-застосунку</a>',
+                methods_of_connecting_styles_lr_2: '<h2>CSS можна додати до елементів HTML у три способи:</h2> <p>Лінійний - за допомогою атрибута style у HTML-елементах:</p> <img src="./images/connecting_1_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <p>Внутрішній - за допомогою style елемента в head розділі:</p> <img src="./images/connecting_2_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <p>Зовнішній - за допомогою зовнішнього файлу CSS:</p> <img src="./images/connecting_3_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                selectors_lr_2: '<p>CSS код:</p> <img src="./images/selectors_1_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_2_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_3_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_4_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_5_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                tag_selectors_lr_2: '<p>Селектори тегу:</p> <img src="./images/selector_teg_1_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selector_teg_2_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                class_selectors_lr_2: '<p>Селектори класу:</p> <img src="./images/selector_class_1_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selector_class_2_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br>  <img src="./images/selector_class_3_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br>  <img src="./images/selector_class_4_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br>  <img src="./images/selector_class_5_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> ',
+                id_selectors_lr_2: '<p>Селектори ідентифікатора:</p> <img src="./images/selector_ind_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                other_selectors_lr_2: '<p>Інші селектори:</p> <img src="./images/selector_other_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                css_lr_2: '<p>CSS код:</p> <img src="./images/selectors_1_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_2_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_3_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_4_laba_2.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/selectors_5_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+                conclusion_lr_2: '<img src="./images/conclusion_laba_2.png" alt="#" style="max-width:100%; height:auto;">',
+        };
+
+        function showSection(sectionId) {
+            document.getElementById('content').innerHTML = labDetails[sectionId];
+        }
+    </script>
+</body>
+</html>
