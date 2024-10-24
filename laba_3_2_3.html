@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіксована блокова верстка - Варіант 2</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 800px;
+            margin: 0 auto;
+        }
+        div {
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        #header {
+            width: 800px;
+            height: 100px;
+            background-color: yellow;
+        }
+        #white {
+            padding: 10px;
+            margin-left: 20px;
+            top: 25px;
+            width: 400px;
+            height: 60px;
+            background-color: white;
+        }
+        #left {
+            float: left;
+            width: 150px;
+            height: 600px;
+            background-color: green;
+            margin-top: 10px;
+        }
+        #right {
+            float: left;
+            width: 650px;
+            height: 600px;
+        }
+        #above {
+            width: 650px;
+            height: 100px;
+            background-color: red;
+            clear: both;
+            margin-top: 10px;
+        }
+        #content {
+            float: left;
+            width: 480px;
+            height: 480px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        #right-sidebar {
+            float: left;
+            width: 150px;
+            height: 480px;
+            background-color: blue;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        #footer {
+            width: 800px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header (1)
+        <div id="white">Inside 1</div>
+    </div>
+    <div id="left">Left Sidebar (2)</div>
+    <div id="right">
+        <div id="above">Above 3 and 4</div>
+        <div id="content">Main Content (3)</div>
+        <div id="right-sidebar">Right Sidebar (4)</div>
+    </div>
+    <div id="footer">Footer (5)</div>
+</body>
+</html>

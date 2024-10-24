@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гумова блокова верстка - Варіант 2</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        div {
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        #header {
+            float: inline-start;
+            width: 100%;
+            height: 10%;
+            background-color: yellow;
+        }
+        #white {
+            padding: 1%;
+            position: relative;
+            left: 5%;
+            width: 40%;
+            height: 60%;
+            background-color: white;
+        }
+        #left {
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 80%;
+            background-color: green;
+            margin-top: 1vh;
+        }
+        #right {
+            position: relative;
+            float: left;
+            width: 75%;
+            height: 81%;
+        }
+        #content {
+            position: relative;
+            float: left;
+            width: 64%;
+            height: 87.7%;
+            background-color: white;
+            margin-top: 1vh;
+        }
+        #above {
+            position: relative;
+            width: 100%;
+            height: 10%;
+            background-color: red;
+            clear: both;
+            margin-top: 1vh;
+        }
+        #right-sidebar {
+            position: relative;
+            float: left;
+            width: 35%;
+            height: 87.7%;
+            background-color: blue;
+            margin-top: 1vh;
+            margin-left: 1%;
+        }
+        #footer {
+            float: inline-end;
+            position: relative;
+            width: 100%;
+            height: 10%;
+            background-color: yellow;
+            margin-top: 1vh;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header (1)
+        <div id="white">Inside 1</div>
+    </div>
+    <div id="left">Left Sidebar (2)</div>
+    <div id="right">
+        <div id="above"> Above 3 and 4</div>
+        <div id="content">Main Content (3)</div>
+        <div id="right-sidebar">Right Sidebar (4)</div>
+    </div>
+    <div id="footer">Footer (5)</div>
+</body>
+</html>
