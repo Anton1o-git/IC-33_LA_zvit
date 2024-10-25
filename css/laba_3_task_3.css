@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bebebe;
+    color: #000000;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.target-audience, .learning-process, .partners {
+    margin-bottom: 40px;
+}
+
+.audience-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.learning-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 30%;
+    margin: 10px;
+    text-align: left;
+    flex: 1 1 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.partner-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.partner-info img {
+    max-width: 45%;
+    margin-right: 20px;
+}
+
+.partner-info strong {
+    color: rgb(7, 108, 148);
+}
+.partner-info p {
+    text-align: left;
+    flex: 1 1 300px; 
+}
+
+.partner-info a {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.partner-info img {
+    max-width: 45%;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 1 1 300px;
+}
