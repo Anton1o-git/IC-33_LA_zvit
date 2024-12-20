@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторна робота №7</title>
+</head>
+<body>
+    <header>
+        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЄКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+        <div class="student-info">
+            <p>Виконав студент групи IC-33 Лихоліт Антон</p>
+            <img src="./images/student-photo.jpg" alt="Фото студента">
+        </div>
+    </header>
+
+    <div class="labs-menu">
+        <button onclick="window.location.href='sr1.html'">Самостійна робота №1</button>
+        <button onclick="window.location.href='laba1.html'">Лабораторна робота №1</button>
+        <button onclick="window.location.href='laba2.html'">Лабораторна робота №2</button>
+        <button onclick="window.location.href='laba3.html'">Лабораторна робота №3</button>
+        <button onclick="window.location.href='laba4.html'">Лабораторна робота №4</button>
+        <button onclick="window.location.href='laba5.html'">Лабораторна робота №5</button>
+        <button onclick="window.location.href='laba6.html'">Лабораторна робота №6</button>
+        <button onclick="window.location.href='laba7.html'">Лабораторна робота №7</button>
+        <button onclick="window.location.href='laba8.html'">Лабораторна робота №8</button>
+        <button onclick="window.location.href='laba9.html'">Лабораторна робота №9</button>
+    </div>
+
+    <div class="container">
+        <div class="labs-details">
+            <button onclick="showSection('topic_lr_7')">Тема, Мета, Місце розташування сайту, звіту</button>
+            <button onclick="showSection('task_1_lr_7')">ЗАВДАННЯ №1</button>
+            <button onclick="showSection('task_2_lr_7')">ЗАВДАННЯ №2</button>
+            <button onclick="showSection('task_3_lr_7')">ЗАВДАННЯ №3</button>
+            <button onclick="showSection('task_4_lr_7')">ЗАВДАННЯ №4</button>
+            <button onclick="showSection('task_5_lr_7')">ЗАВДАННЯ №5</button>
+            <button onclick="showSection('task_6_lr_7')">ЗАВДАННЯ №6</button>
+            <button onclick="showSection('task_7_lr_7')">ЗАВДАННЯ №7</button>
+            <button onclick="showSection('conclusion_lr_7')">ВИСНОВКИ</button>
+        </div>
+        <div id="content" class="content">
+            <p>Оберіть секцію, щоб побачити деталі.</p>
+        </div>
+    </div>
+
+    <script>
+        const labDetails = {
+            title: 'Лабораторна робота №7',
+            topic_lr_7: '<img src="./images/topic_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <br> <a href="https://github.com/Anton1o-git/web_application">Посилання на WEB-застосунок(GitHub)</a> <br> <br> <a href="https://anton1o-git.github.io/web_application/">Жива сторінка WEB-застосунку</a>  <br> <br> <a href="https://github.com/Anton1o-git/IC-33_LA_zvit">Посилання на звіт(GitHub)</a> <br> <br> <a href="https://anton1o-git.github.io/IC-33_LA_zvit/">Жива сторінка звіту</a>',
+            task_1_lr_7: '<h2>Завдання №1</h2> <br> <a href="./laba_7_task_1/index.html">Посилання на сторінку завдання №1</a> <br> <img src="./images/task_1_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_1_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_1_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>CSS-код:</h3> <img src="./images/task_1_css_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_1_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_1_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_2_lr_7: '<h2>Завдання №2</h2> <br> <a href="./laba_7_task_2/index.html">Посилання на сторінку завдання №2</a> <br> <img src="./images/task_2_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_2_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_2_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>CSS-код:</h3> <img src="./images/task_2_css_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_2_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_2_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_3_lr_7: '<h2>Завдання №3</h2> <br> <a href="./laba_7_task_3/index.html">Посилання на сторінку завдання №3</a> <br> <img src="./images/task_3_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_3_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_3_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>CSS-код:</h3> <img src="./images/task_3_css_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_3_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_3_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_4_lr_7: '<h2>Завдання №4</h2> <br> <a href="./laba_7_task_4/index.html">Посилання на сторінку завдання №4</a> <br> <img src="./images/task_4_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_4_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_4_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_4_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_4_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_5_lr_7: '<h2>Завдання №5</h2> <br> <a href="./laba_7_task_5/index.html">Посилання на сторінку завдання №5</a> <br> <img src="./images/task_5_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_5_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_5_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_5_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_5_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_5_3_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_5_4_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_6_lr_7: '<h2>Завдання №6</h2> <br> <a href="./laba_7_task_6/index.html">Посилання на сторінку завдання №6</a> <br> <img src="./images/task_6_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_6_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_6_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_6_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_6_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_6_3_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_6_4_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            task_7_lr_7: '<h2>Завдання №7</h2> <br> <a href="./laba_7_task_7/index.html">Посилання на сторінку завдання №7</a> <br> <img src="./images/task_7_1_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_2_condition_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>HTML-код:</h3> <img src="./images/task_7_html_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <h3>JS-код:</h3> <img src="./images/task_7_js_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <h3>Результат:</h3> <img src="./images/task_7_1_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_2_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_3_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_4_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_5_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_6_result_laba_7.png" alt="#" style="max-width:100%; height:auto;"> <br> <img src="./images/task_7_7_result_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+            conclusion_lr_7: '<img src="./images/conclusion_laba_7.png" alt="#" style="max-width:100%; height:auto;">',
+        };
+        
+        function showSection(sectionId) {
+            document.getElementById('content').innerHTML = labDetails[sectionId];
+        }
+    </script>
+</body>
+</html>
