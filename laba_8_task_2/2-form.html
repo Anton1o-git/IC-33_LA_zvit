@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>laba_8_2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .feedback-form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .feedback-form label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+
+    .feedback-form button {
+      background-color: #4b9eec;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .feedback-form button:hover {
+      background-color: #3765fd;
+    }
+  </style>
+</head>
+<body>
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="8"></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="2-form.js"></script>
+</body>
+</html>
